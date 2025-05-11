@@ -1,0 +1,192 @@
+/* CineBooker Login Page CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 28rem;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.brand-primary {
+    color: #ff3d71;
+}
+
+.login-subtitle {
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
+
+.error-message {
+    background-color: rgba(153, 27, 27, 0.2);
+    color: #f87171;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: #0d1117;
+    border: 1px solid #4b5563;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ff3d71;
+    box-shadow: 0 0 0 2px rgba(255, 61, 113, 0.25);
+}
+
+.form-input::placeholder {
+    color: #6b7280;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.forgot-password a {
+    color: #ff3d71;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-input {
+    height: 1rem;
+    width: 1rem;
+    background-color: #0d1117;
+    border: 1px solid #4b5563;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    accent-color: #ff3d71;
+}
+
+.checkbox-label {
+    color: #d1d5db;
+    font-size: 0.875rem;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #ff3d71;
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #e0305f;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #161b22, 0 0 0 4px #ff3d71;
+}
+
+.submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.signup-section {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.signup-text {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.signup-link {
+    color: #ff3d71;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .login-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
